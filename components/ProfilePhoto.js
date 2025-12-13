@@ -55,7 +55,7 @@ export default function ProfilePhoto() {
 
       {/* Badge centered below the photo */}
       <motion.div
-        className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-full shadow-lg font-semibold text-sm"
+        className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-2 rounded-full shadow-lg font-semibold text-sm whitespace-nowrap"
         animate={{ y: [0, -4, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
