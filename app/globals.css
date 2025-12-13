@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme variables for light and dark */
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --primary: #1e3a8a;
+  --accent: #2563eb;
+}
+
+.dark {
+  --bg: #0b1220;
+  --surface: #0b1220;
+  --text: #e6eef8;
+  --muted: #94a3b8;
+  --primary: #93c5fd;
+  --accent: #60a5fa;
+}
+
+/* Make page take full height */
+html {
+  height: 100%;
+}
+
+body, #__next {
+  min-height: 100vh;
+}
+
+/* ----- GLOBAL BODY STYLING ----- */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial;
+  margin: 0;
+  padding: 0;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+/* Smooth scrolling across whole website */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------------------------------------------------- */
+/* ------------------- CUSTOM CLASSES ----------------- */
+/* ---------------------------------------------------- */
+
+/* ----- GLOBAL TITLES (h2) ----- */
+.section-title {
+  @apply text-3xl md:text-4xl font-bold mb-10;
+  color: var(--primary);
+}
+
+/* ----- CARD STYLE (universal) ----- */
+.card {
+  background-color: var(--surface);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+  transition: box-shadow 200ms ease, transform 200ms ease;
+}
+
+.card:hover {
+  box-shadow: 0 18px 40px rgba(2,6,23,0.12);
+  transform: translateY(-4px);
+}
+
+.card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+}
+
+.card-text {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ----- SKILL BLOCKS ----- */
+.skill-block {
+  background-color: var(--surface);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(2,6,23,0.04);
+  border: 1px solid rgba(0,0,0,0.04);
+  transition: box-shadow 200ms ease, transform 200ms ease;
+}
+
+.skill-block:hover {
+  box-shadow: 0 12px 30px rgba(2,6,23,0.08);
+  transform: translateY(-4px);
+}
+
+.skill-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.skill-list li {
+  margin-bottom: 0.25rem;
+  color: var(--muted);
+}
+
+/* ----- NAVBAR (if you add later) ----- */
+.nav-link {
+  color: var(--muted);
+  font-weight: 500;
+  transition: color 150ms ease;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+/* ----- Button Primary ----- */
+.btn-primary {
+  padding: 0.75rem 2rem;
+  background-color: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 24px rgba(37,99,235,0.12);
+  transition: background-color 150ms ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary);
+}
+
+/* ----- Soft fade-in animation ----- */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ----- Section spacing ----- */
+section {
+  scroll-margin-top: 100px; /* smooth anchor scrolling */
+}
