@@ -44,7 +44,7 @@ export const PROFILE = {
       ]
     },
     {
-      role: 'Full-Stack Developer (Contract)',
+      role: 'Full-Stack Developer (Intern)',
       employer: 'Bank of Tunisia & Emirates (BTE)',
       start: 'Jul 2023',
       end: 'Sep 2023',
@@ -61,7 +61,6 @@ export const PROFILE = {
       school: 'Faculty of Sciences of Monastir',
       start: 'Sep 2024',
       end: 'Present',
-      gpa: '3.8/4.0',
       highlights: [
         'Advanced Machine Learning & Deep Learning',
         'Data Engineering & Cloud Computing',
@@ -75,7 +74,6 @@ export const PROFILE = {
       school: 'Faculty of Sciences of Monastir',
       start: 'Sep 2021',
       end: 'Jun 2024',
-      gpa: '3.9/4.0',
       highlights: [
         'Full-Stack Web Development',
         'Database Design & Management',

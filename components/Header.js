@@ -16,6 +16,7 @@ export default function Header() {
           <Link href="#experience" className="hover:text-accent transition">Experience</Link>
           <Link href="#projects" className="hover:text-accent transition">Projects</Link>
           <Link href="#certifications" className="hover:text-accent transition">Certifications</Link>
+          <Link href="#education" className="hover:text-accent transition">Education</Link>
           <Link href="#contact" className="hover:text-accent transition">Contact</Link>
         </nav>
       </div>
